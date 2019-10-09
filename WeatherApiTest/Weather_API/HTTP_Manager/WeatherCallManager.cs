@@ -18,7 +18,7 @@ namespace WeatherApiTest.Weather_API.HTTP_Manager
         }
         public string GetLatestWeather()
         {
-            var request = new RestRequest("/weather" + WeatherConfig.ApiUrlMod + "&" + WeatherConfig.ApiUrlMod1 + WeatherConfig.ApiKey);
+            var request = new RestRequest(WeatherConfig.ApiUrlMod + "&" + WeatherConfig.ApiUrlMod1 + WeatherConfig.ApiKey);
             var response = client.Execute(request, Method.GET);
             return response.Content;
         }
