@@ -37,6 +37,7 @@ namespace WeatherApiTest.Weather_API.Data_Handling
     public class Main
     {
         public double pressure { get; set;}
+        public double humidity { get; set; }
         public double temp_min { get; set; }
         public double temp_max { get; set; }
 
@@ -44,7 +45,10 @@ namespace WeatherApiTest.Weather_API.Data_Handling
 
     public class Sys
     {
+        public string type { get; set; }
         public string country { get; set;}
+        public string sunrise { get; set; }
+        public string sunset { get; set; }
     }
 
     public class Wind

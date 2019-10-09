@@ -21,9 +21,21 @@ namespace WeatherApiTest.Tests
         }
 
         [Test]
+        public void Weatherlongitudevalue()
+        {
+            Assert.NotNull(weatherapiservice.weatherDTO.latestWeather.coord.lon);
+        }
+
+        [Test]
         public void Weatherlatitude()
         {
             Assert.AreNotEqual(weatherapiservice.weatherDTO.latestWeather.coord.lat, 50.51);
+        }
+
+        [Test]
+        public void testLatitudevalue()
+        {
+            Assert.AreEqual(weatherapiservice.weatherDTO.latestWeather.coord.lat,51.51);
         }
 
         [Test]
@@ -65,7 +77,7 @@ namespace WeatherApiTest.Tests
         [Test]
         public void testspeed()
         {
-            Assert.GreaterOrEqual(weatherapiservice.weatherDTO.latestWeather.wind.speed, 6);
+            Assert.GreaterOrEqual(weatherapiservice.weatherDTO.latestWeather.wind.speed, 4);
         }
         [Test]
         public void testdatatype()
@@ -77,7 +89,7 @@ namespace WeatherApiTest.Tests
         [Test]
         public void  MinTemp()
         {
-         // Assert.IsInstanceOf(weatherapiservice.weatherDTO.latestWeather.main.temp_min.GetType());
+         Assert.That(weatherapiservice.weatherDTO.latestWeather.main.temp_min, Is.EqualTo(100).Within(300));
         }
         [Test]
         public void Timezone()
@@ -85,11 +97,9 @@ namespace WeatherApiTest.Tests
            Assert.AreEqual(weatherapiservice.weatherDTO.latestWeather.timezone, 3600);
         }
         [Test]
-        public void testweather()
+        public void testbaselength()
         {
-            //    Assert.IsTrue(weatherapiservice.weatherDTO.latestWeather.weather[1].main);
-            
-           // Assert.That(weatherapiservice.weatherDTO.latestWeather);
+        Assert.IsTrue(weatherapiservice.weatherDTO.latestWeather.@base.Length == 8);
         }
 
         [Test]
@@ -127,11 +137,27 @@ namespace WeatherApiTest.Tests
         }
 
         [Test]
-        public void testdata()
+        public void testcountrylength()
         {
+        Assert.IsNotNull(weatherapiservice.weatherDTO.latestWeather.sys.country.Length);
+        }
 
-            Assert.IsNotNull(weatherapiservice.weatherDTO.latestWeather.sys.country.Length);
+        [Test]
+        public void testcountry()
+        {
+            Assert.IsNotNull(weatherapiservice.weatherDTO.latestWeather.main.humidity);
+        }
 
+        [Test]
+        public void testLatitude()
+        {
+            Assert.IsNotNull(weatherapiservice.weatherDTO.latestWeather.coord.lat);
+        }
+
+        [Test]
+        public void testsunrise()
+        {
+            Assert.IsNotNull(weatherapiservice.weatherDTO.latestWeather.sys.sunrise);
         }
     }
 }
