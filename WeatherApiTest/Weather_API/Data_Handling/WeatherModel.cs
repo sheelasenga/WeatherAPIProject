@@ -15,8 +15,10 @@ namespace WeatherApiTest.Weather_API.Data_Handling
        public double cod { get; set; }
        public Sys sys { get; set; }
        public Wind wind { get; set; }
-        public double timezone { get; set; }
-
+       public double timezone { get; set; }
+       public Clouds clouds { get; set; }
+       public string name { get; set; }
+       public double id { get; set; }
     }
     public class Coord
         {
@@ -50,7 +52,11 @@ namespace WeatherApiTest.Weather_API.Data_Handling
         public double speed { get; set; }
         public double deg { get; set; }
     }
-
+    public class Clouds
+    {
+        public double all { get; set; }
+        
+    }
 
 
 }

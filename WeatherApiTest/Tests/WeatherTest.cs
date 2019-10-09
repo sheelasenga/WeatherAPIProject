@@ -70,6 +70,8 @@ namespace WeatherApiTest.Tests
         [Test]
         public void testdatatype()
         {
+          
+        Assert.AreEqual(2,weatherapiservice.weatherDTO.latestWeather.sys.country.Length);
             
         }
         [Test]
@@ -86,7 +88,36 @@ namespace WeatherApiTest.Tests
         public void testweather()
         {
             //    Assert.IsTrue(weatherapiservice.weatherDTO.latestWeather.weather[1].main);
-         
+            
+           // Assert.That(weatherapiservice.weatherDTO.latestWeather);
+        }
+
+        [Test]
+        public void clouds()
+        {
+            Assert.LessOrEqual(weatherapiservice.weatherDTO.latestWeather.clouds.all, 100);
+        }
+
+        [Test]
+        public void NameOfCity()
+        {
+            Assert.AreEqual("London",weatherapiservice.weatherDTO.latestWeather.name);
+        }
+
+        [Test]
+        public void Citycheck()
+        {
+            Assert.IsNotNull(weatherapiservice.weatherDTO.latestWeather.name);
+        }
+        [Test]
+        public void Idcheck()
+        {
+            Assert.IsNotNull(weatherapiservice.weatherDTO.latestWeather.id);
+        }
+        [Test]
+        public void CityLengthcheck()
+        {
+            Assert.IsTrue(weatherapiservice.weatherDTO.latestWeather.name.Length == 6);
         }
     }
 }
