@@ -15,32 +15,54 @@ namespace WeatherApiTest.Tests
 
         [Test]
         public void Weather()
-        {
-  //          Assert.AreEqual(weatherapiservice.weatherDTO.latestWeather.coord,null);
-        }
+        { }
 
         [Test]
         public void Weatherlongitude()
         {
-      //      Assert.AreEqual(weatherapiservice.weatherDTO.latestWeather.coord.lon, -0.13);
+            Assert.AreEqual(weatherapiservice.weatherDTO.latestWeather.coord.lon, -0.13);
         }
 
         [Test]
         public void Weatherlatitude()
         {
-     //      Assert.AreEqual(weatherapiservice.weatherDTO.latestWeather.coord.lat, 51.51);
+        Assert.AreNotEqual(weatherapiservice.weatherDTO.latestWeather.coord.lat, 50.51);
         }
 
         [Test]
         public void testcoord()
         {
-     //       Assert.AreEqual(null, weatherapiservice.weatherDTO.latestWeather.coord);
+            Assert.AreEqual(weatherapiservice.weatherDTO.latestWeather.coord, null);
         }
 
         [Test]
         public void testbase()
         {
             Assert.AreEqual("stations",weatherapiservice.weatherDTO.latestWeather.@base.ToString());
+        }
+
+        [Test]
+        public void testpressure()
+        {
+            Assert.GreaterOrEqual(weatherapiservice.weatherDTO.latestWeather.main.pressure, 1000);
+        }
+
+        [Test]
+        public void testArray()
+        {
+            Assert.Greater(weatherapiservice.weatherDTO.latestWeather.weather[0].id,800);
+        }
+
+        [Test]
+        public void testcod()
+        {
+            Assert.AreEqual(weatherapiservice.weatherDTO.latestWeather.cod, 200);
+        }
+
+        [Test]
+        public void testsys()
+        {
+            Assert.AreEqual("GB",weatherapiservice.weatherDTO.latestWeather.sys.country.ToString());
         }
     }
 }

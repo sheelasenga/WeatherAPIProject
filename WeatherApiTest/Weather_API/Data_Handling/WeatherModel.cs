@@ -8,24 +8,39 @@ namespace WeatherApiTest.Weather_API.Data_Handling
 {
    public  class WeatherModel
     {
-      //  public Coord coord { get; set; }
-      //  public Weather weather { get; set; }
-       // public Main main { get; set; }
+       public Coord coord { get; set; }
+       public Main main { get; set; }
        public string  @base { get; set; }
-       // public double lon { get; set; }
+       public IList<Weather> weather { get; set; }
+       public double cod { get; set; }
+       public Sys sys { get; set; }
+
 
     }
-     //  public class Coord
-       // {
-        //    public string lon { get; set; }
-         //   public double lat { get; set; }
-      // }
+    public class Coord
+        {
+           public double lon { get; set; }
+           public double lat { get; set; }
+       }
 
     public class Weather
     {
-
+        public int id { get; set;}
+        public string main { get; set; }
+        public  string description { get; set; }
+        public string icon { get; set; }
     }
    
+    public class Main
+    {
+        public double pressure { get; set;}
 
-    
+    }
+
+    public class Sys
+    {
+        public string country { get; set;}
+    }
+
+
 }
