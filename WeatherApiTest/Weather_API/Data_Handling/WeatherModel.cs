@@ -14,7 +14,8 @@ namespace WeatherApiTest.Weather_API.Data_Handling
        public IList<Weather> weather { get; set; }
        public double cod { get; set; }
        public Sys sys { get; set; }
-
+       public Wind wind { get; set; }
+        public double timezone { get; set; }
 
     }
     public class Coord
@@ -34,6 +35,8 @@ namespace WeatherApiTest.Weather_API.Data_Handling
     public class Main
     {
         public double pressure { get; set;}
+        public double temp_min { get; set; }
+        public double temp_max { get; set; }
 
     }
 
@@ -41,6 +44,13 @@ namespace WeatherApiTest.Weather_API.Data_Handling
     {
         public string country { get; set;}
     }
+
+    public class Wind
+    {
+        public double speed { get; set; }
+        public double deg { get; set; }
+    }
+
 
 
 }

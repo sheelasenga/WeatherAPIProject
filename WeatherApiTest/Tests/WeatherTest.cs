@@ -13,10 +13,7 @@ namespace WeatherApiTest.Tests
     {
         private WeatherAPIService weatherapiservice = new WeatherAPIService();
 
-        [Test]
-        public void Weather()
-        { }
-
+        
         [Test]
         public void Weatherlongitude()
         {
@@ -26,19 +23,19 @@ namespace WeatherApiTest.Tests
         [Test]
         public void Weatherlatitude()
         {
-        Assert.AreNotEqual(weatherapiservice.weatherDTO.latestWeather.coord.lat, 50.51);
+            Assert.AreNotEqual(weatherapiservice.weatherDTO.latestWeather.coord.lat, 50.51);
         }
 
         [Test]
         public void testcoord()
         {
-            Assert.AreEqual(weatherapiservice.weatherDTO.latestWeather.coord, null);
+            Assert.IsNull(weatherapiservice.weatherDTO.latestWeather.coord);
         }
 
         [Test]
         public void testbase()
         {
-            Assert.AreEqual("stations",weatherapiservice.weatherDTO.latestWeather.@base.ToString());
+            Assert.AreEqual("stations", weatherapiservice.weatherDTO.latestWeather.@base.ToString());
         }
 
         [Test]
@@ -50,7 +47,7 @@ namespace WeatherApiTest.Tests
         [Test]
         public void testArray()
         {
-            Assert.Greater(weatherapiservice.weatherDTO.latestWeather.weather[0].id,800);
+            Assert.Greater(weatherapiservice.weatherDTO.latestWeather.weather[0].id, 500);
         }
 
         [Test]
@@ -62,7 +59,34 @@ namespace WeatherApiTest.Tests
         [Test]
         public void testsys()
         {
-            Assert.AreEqual("GB",weatherapiservice.weatherDTO.latestWeather.sys.country.ToString());
+            Assert.AreEqual("GB", weatherapiservice.weatherDTO.latestWeather.sys.country.ToString());
+        }
+
+        [Test]
+        public void testspeed()
+        {
+            Assert.GreaterOrEqual(weatherapiservice.weatherDTO.latestWeather.wind.speed, 8);
+        }
+        [Test]
+        public void testdatatype()
+        {
+            
+        }
+        [Test]
+        public void  MinTemp()
+        {
+         // Assert.IsInstanceOf(weatherapiservice.weatherDTO.latestWeather.main.temp_min.GetType());
+        }
+        [Test]
+        public void Timezone()
+        {
+           Assert.AreEqual(weatherapiservice.weatherDTO.latestWeather.timezone, 3600);
+        }
+        [Test]
+        public void testweather()
+        {
+            //    Assert.IsTrue(weatherapiservice.weatherDTO.latestWeather.weather[1].main);
+         
         }
     }
 }
