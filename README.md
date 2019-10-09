@@ -2,4 +2,6 @@
 
 Testing the Weather forcast API.
 
-I have made several tests for this project.
+The aim of this project was to test the Weather API (JSON) using unit test in c#.
+
+
