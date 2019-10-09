@@ -65,7 +65,7 @@ namespace WeatherApiTest.Tests
         [Test]
         public void testspeed()
         {
-            Assert.GreaterOrEqual(weatherapiservice.weatherDTO.latestWeather.wind.speed, 8);
+            Assert.GreaterOrEqual(weatherapiservice.weatherDTO.latestWeather.wind.speed, 6);
         }
         [Test]
         public void testdatatype()
@@ -118,6 +118,20 @@ namespace WeatherApiTest.Tests
         public void CityLengthcheck()
         {
             Assert.IsTrue(weatherapiservice.weatherDTO.latestWeather.name.Length == 6);
+        }
+
+        [Test]
+        public void CheckDescription()
+        {
+            Assert.IsNotNull(weatherapiservice.weatherDTO.latestWeather.weather[0].description);
+        }
+
+        [Test]
+        public void testdata()
+        {
+
+            Assert.IsNotNull(weatherapiservice.weatherDTO.latestWeather.sys.country.Length);
+
         }
     }
 }
