@@ -28,8 +28,8 @@ WeatherDTO - The data tansfer object class was used to carry data between proces
 
 WeatherModel - This class contains the data types.
 
-WeatherCallManager - this class was used to make API requests and get a response back.
+WeatherCallManager - this class was used to make API requests and get response.
 
-WeatherAPIService - This class calls the deserialze method which is in the WeatherDTO class.
+WeatherAPIService - This class calls the deserialize method which is in the WeatherDTO class.
 
 WeatherTests - This class contains all the different tests of the service.
