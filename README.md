@@ -26,7 +26,7 @@ NuGet Packages used:
 
 Four different classes were used.
 
-*WeatherDTO - The data tansfer object class was used to carry data between processes.
+WeatherDTO - The data tansfer object class was used to carry data between processes.
 
 WeatherModel - This class contains the data types.
 
