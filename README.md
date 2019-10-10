@@ -9,6 +9,7 @@ The aim of this project was to test the Weather API for the OpenWeatherMap 5 day
 2. Numerical values were tested using Greater than or equal to
 3. Strings were tested using the length, IsNull, IsNotNull
 4. Header tests could also be carried out 
+
 NuGet Packages used:
 1. NUnit
 2. RestSharp
