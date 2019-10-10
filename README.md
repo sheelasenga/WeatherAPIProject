@@ -16,7 +16,7 @@ NuGet Packages used:
 3. Newtonsoft.Json
 4. NUnit3TestAdapter
 
-# Build with:
+# Built with:
 1. Visual Studio - The project was build and tested here in C#
 2. Postman - A platform used for API development
 3. Git - This platform was used for version control.
