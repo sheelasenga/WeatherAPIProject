@@ -39,12 +39,6 @@ namespace WeatherApiTest.Tests
         }
 
         [Test]
-        public void testcoord()
-        {
-            Assert.IsNull(weatherapiservice.weatherDTO.latestWeather.coord);
-        }
-
-        [Test]
         public void testbase()
         {
             Assert.AreEqual("stations", weatherapiservice.weatherDTO.latestWeather.@base.ToString());
@@ -92,7 +86,7 @@ namespace WeatherApiTest.Tests
          Assert.That(weatherapiservice.weatherDTO.latestWeather.main.temp_min, Is.EqualTo(100).Within(300));
         }
         [Test]
-        public void Timezone()
+        public void Timezonecheck()
         {
            Assert.AreEqual(weatherapiservice.weatherDTO.latestWeather.timezone, 3600);
         }
@@ -103,7 +97,7 @@ namespace WeatherApiTest.Tests
         }
 
         [Test]
-        public void clouds()
+        public void cloudscheck()
         {
             Assert.LessOrEqual(weatherapiservice.weatherDTO.latestWeather.clouds.all, 100);
         }
@@ -131,7 +125,7 @@ namespace WeatherApiTest.Tests
         }
 
         [Test]
-        public void CheckDescription()
+        public void DescriptionCheck()
         {
             Assert.IsNotNull(weatherapiservice.weatherDTO.latestWeather.weather[0].description);
         }
