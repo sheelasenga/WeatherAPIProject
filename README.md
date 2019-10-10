@@ -16,10 +16,10 @@ NuGet Packages used:
 4. NUnit3TestAdapter
 
 # Build with:
-Visual Studio - The project was build and tested here in C#
-Postman - A platform used for API development
-Git - This platform was used for version control.
-Openweather - This service provided the weather data.
+1. Visual Studio - The project was build and tested here in C#
+2. Postman - A platform used for API development
+3. Git - This platform was used for version control.
+4. Openweather - This service provided the weather data.
 
 Four different classes were used.
 
