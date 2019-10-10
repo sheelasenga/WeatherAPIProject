@@ -5,16 +5,16 @@ Testing the Weather forcast API.
 The aim of this project was to test the Weather API for the OpenWeatherMap 5 day forecast using unit test in c#.
 
 # Testing 
-1. Different data types were tested
-2. Numerical values were tested using Greater than or equal to
-3. Strings were tested using the length, IsNull, IsNotNull
-4. Header tests could also be carried out 
+* Different data types were tested
+* Numerical values were tested using Greater than or equal to
+* Strings were tested using the length, IsNull, IsNotNull
+* Header tests could also be carried out 
 
 NuGet Packages used:
 * NUnit
 * RestSharp
-3. Newtonsoft.Json
-4. NUnit3TestAdapter
+* Newtonsoft.Json
+* NUnit3TestAdapter
 
 # Built with:
 1. Visual Studio - The project was build and tested here in C#
@@ -26,7 +26,7 @@ NuGet Packages used:
 
 Four different classes were used.
 
-WeatherDTO - The data tansfer object class was used to carry data between processes.
+*WeatherDTO - The data tansfer object class was used to carry data between processes.
 
 WeatherModel - This class contains the data types.
 
