@@ -11,8 +11,8 @@ The aim of this project was to test the Weather API for the OpenWeatherMap 5 day
 4. Header tests could also be carried out 
 
 NuGet Packages used:
-1. NUnit
-2. RestSharp
+* NUnit
+* RestSharp
 3. Newtonsoft.Json
 4. NUnit3TestAdapter
 
@@ -30,7 +30,7 @@ WeatherDTO - The data tansfer object class was used to carry data between proces
 
 WeatherModel - This class contains the data types.
 
-WeatherCallManager - this class was used to make API requests and get response.
+WeatherCallManager - This class was used to make API requests and get response.
 
 WeatherAPIService - This class calls the deserialize method which is in the WeatherDTO class.
 
