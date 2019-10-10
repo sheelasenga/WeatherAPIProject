@@ -4,7 +4,6 @@ Testing the Weather forcast API.
 
 The aim of this project was to test the Weather API for the OpenWeatherMap 5 day forecast using unit test in c#.
 
-<<<<<<< HEAD
 # Testing 
 1. Different data types were tested
 2. Numerical values were tested using Greater than or equal to
@@ -16,10 +15,7 @@ NuGet Packages used:
 3. Newtonsoft.Json
 4. NUnit3TestAdapter
 
-# Built with:
-=======
 # Build with:
->>>>>>> 911b9e92de173415113b545a57ecc46df354348a
 Visual Studio - The project was build and tested here in C#
 Postman - A platform used for API development
 Git - This platform was used for version control.
