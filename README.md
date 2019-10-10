@@ -22,6 +22,8 @@ NuGet Packages used:
 3. Git - This platform was used for version control.
 4. Openweather - This service provided the weather data.
 
+# Classes
+
 Four different classes were used.
 
 WeatherDTO - The data tansfer object class was used to carry data between processes.
