@@ -1,7 +1,7 @@
 # WeatherAPIProject
 
 ## Table of Contents
-* [Introduction] (https://github.com/sheelasenga/WeatherAPIProject/)
+* [Introduction](https://github.com/sheelasenga/WeatherAPIProject/)
 * [Tests Implemented] 
 * [NuGet Packages] 
 * [Built with] 
