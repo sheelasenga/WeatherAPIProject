@@ -1,12 +1,12 @@
 # WeatherAPIProject
 
 ## Table of Contents
-* [Introduction]https://github.com/sheelasenga/WeatherAPIProject/blob/master/README.md#introduction
-* [Tests Implemented]https://github.com/sheelasenga/WeatherAPIProject/blob/master/README.md#tests-implemented
-* [NuGet Packages]https://github.com/sheelasenga/WeatherAPIProject/blob/master/README.md#nuget-packages-used
-* [Built with]https://github.com/sheelasenga/WeatherAPIProject/blob/master/README.md#built-with
-* [Classes]https://github.com/sheelasenga/WeatherAPIProject/blob/master/README.md#classes
-* [Conclusion]https://github.com/sheelasenga/WeatherAPIProject/blob/master/README.md#things-to-be-implemented 
+* [Introduction](https://github.com/sheelasenga/WeatherAPIProject/blob/master/README.md#introduction)
+* [Tests Implemented](https://github.com/sheelasenga/WeatherAPIProject/blob/master/README.md#tests-implemented)
+* [NuGet Packages](https://github.com/sheelasenga/WeatherAPIProject/blob/master/README.md#nuget-packages-used)
+* [Built with](https://github.com/sheelasenga/WeatherAPIProject/blob/master/README.md#built-with)
+* [Classes](https://github.com/sheelasenga/WeatherAPIProject/blob/master/README.md#classes)
+* [Conclusion](https://github.com/sheelasenga/WeatherAPIProject/blob/master/README.md#things-to-be-implemented)
 
 
 ## Introduction
